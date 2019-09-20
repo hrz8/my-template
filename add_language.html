@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Add & Edit Content</title>
+    <title>Add Language</title>
 
     <!-- favicon -->
     <link rel="title icon" type="image/png" href="assets/images/agate_icon.png">
@@ -51,27 +51,16 @@
                             <div class="collapsible-body d-block">
                                 <ul>
                                     <li>
-                                        <a href="manage.html" class="waves-effect pl-4"><span class="fas fa-long-arrow-alt-left" aria-hidden="true"></span>&emsp;Back</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">Settings</a>
-                            <div class="collapsible-body d-block">
-                                <ul>
-                                    <li>
-                                        <a href="settings_news.html" class="waves-effect pl-4"><span class="fas fa-cog" aria-hidden="true"></span>&emsp;Info & Preferences</a>
+                                        <a href="language_news.html" class="waves-effect pl-4"><span class="fas fa-long-arrow-alt-left" aria-hidden="true"></span>&emsp;Back</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="active">
-                            <a class="collapsible-header waves-effect arrow-r active">Language</a>
                             <div class="collapsible-body d-block">
                                 <ul>
                                     <li>
-                                        <a href="language_news.html" class="waves-effect pl-4 active"><span class="fas fa-edit" aria-hidden="true"></span>&emsp;Add & Edit Content</a>
+                                        <a href="add_news.html" class="waves-effect pl-4 active"><span class="fas fa-file-medical" aria-hidden="true"></span>&emsp;Add Language</a>                                        
                                     </li>
                                 </ul>
                             </div>
@@ -103,7 +92,8 @@
                     </li>
                     <li class="breadcrumb-item black-text"><a href="game_description.html">Kota Kita</a></li>
                     <li class="breadcrumb-item black-text active"><a href="manage.html">News</a></li>
-                    <li class="breadcrumb-item black-text active">Now Netflix Is All-Thumbs</li>
+                    <li class="breadcrumb-item black-text active"><a href="settings_news.html">Now Netflix Is All-Thumbs</a></li>
+                    <li class="breadcrumb-item black-text active">Add Language</li>
                 </ol>
             </div>
             <!--/. breadcrumb-->
@@ -131,71 +121,60 @@
 
         <div class="container-fluid">
             <div class="row justify-content-center">
-
                 <div class="card col-lg-7 col-md-8 px-0">
-                    <div class="card-header text-center h5 bg-agt-dark text-white">Edit Content</div>
+                    <div class="card-header text-center h5 bg-agt-dark text-white">Add Language</div>
                     <div class="card-body">
-                        <div class="row mb-5">
-                            <div class="col-sm-5">
-                                <span>English</span> (Current)
-                                <a class="btn btn-agt btn-agt-red btn-agt-radius-normal p-1 mb-1">
-                                    <span class="fas fa-trash"></span>&nbsp;Remove
-                                </a>
-                            </div>
-                            <div class="col-sm-7">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <select name="Languages" class="select2">
-                                            <option value="00" disabled selected>Languages (3)</option>
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col-md-3">
+                                    <div class="md-form">
+                                        <select name="Language" class="select2">
+                                            <option value="00" disabled selected>Select Language</option>
                                             <option value="AR">Arabic</option>
                                             <option value="EN">English</option>
-                                            <option value="ID">Indonesia</option>
+                                            <option value="ID">Indonesian</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-6">
-                                        <a href="add_language.html" class="btn btn-agt btn-agt-default btn-agt-radius-extra mt-3 mt-md-0 py-2 px-5 px-md-2 btn-block"><span class="fas fa-plus" aria-hidden="true"></span>&nbsp;Add Language</a>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="md-form">
+                                        <input type="email" id="Title" class="form-control">
+                                        <label for="Title">Title</label>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <form action="">
                             <div class="md-form">
-                                <input type="email" id="Title" class="form-control" value="Lorem ipsum dolor sit amet">
-                                <label for="Title">Title</label>
-                            </div>
-                            <div class="md-form">
-                                <textarea id="ShortDescription" class="form-control md-textarea" rows="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem, placeat ex sint laboriosam ducimus!</textarea>
+                                <textarea id="ShortDescription" class="form-control md-textarea" rows="1"></textarea>
                                 <label for="ShortDescription">Short Description</label>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4 mb-0 mt-3 my-sm-3">
+                            <div class="row mb-3">
+                                <div class="col-md-4 mt-3">
                                     <label class="text-muted mb-1 font-small">Thumbnail</label>
-                                    <img src="assets/images/random1.jpg" alt="selected image" id="Thumbnail_preview" class="img-fluid">
+                                    <img src="assets/images/noimg.jpg" alt="selected image" id="Thumbnail_preview" class="img-fluid">
                                     <img src="assets/images/noimg.jpg" alt="default image" id="Thumbnail_default" class="d-none">
                                 </div>
-                                <div class="col-md-4 my-3">
+                                <div class="col-md-4 mt-3">
                                     <div class="col-md-12 pl-0">
                                         <a href="#" class="file-field btn btn-agt btn-agt-light btn-agt-radius-normal p-2 font-small mt-md-4 ml-0">
-                                            <span>Change Image</span>
+                                            <span>Upload Image</span>
                                             <input type="file" accept="image/*" id="Thumbnail" name="Thumbnail">
                                         </a>
                                     </div>
                                     <div class="col-md-12 pl-0">
-                                        <a href="#" id="Thumbnail_remove" class="btn btn-agt btn-agt-red btn-agt-radius-normal p-2 font-small ml-0">Remove</a>                                    
+                                        <a href="#" id="Thumbnail_remove" class="btn btn-agt btn-agt-red btn-agt-radius-normal p-2 font-small ml-0 d-none">Remove</a>                                    
                                     </div>                                
                                 </div>
                             </div>
                             <div class="mt-3">
                                 <label class="text-muted mb-1 font-small">Content</label>
-                                <textarea id="Content"  class="md-textarea form-control">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi totam asperiores sequi non ullam nihil ad magnam atque aspernatur quas consectetur facilis tempora ab, ea at! Laudantium velit consequuntur corrupti iusto aliquid provident nesciunt expedita repellendus officiis, ut saepe beatae quae animi vitae at quaerat laborum nobis totam fugiat cum. Quasi maiores molestias reprehenderit dolor necessitatibus assumenda earum qui, ut animi debitis ex odio blanditiis architecto illum quisquam explicabo consequuntur molestiae corrupti id. Quae recusandae nulla, inventore sed molestiae dolore? Culpa debitis nam quisquam aliquam adipisci, distinctio cumque exercitationem ipsam voluptatibus itaque quae asperiores similique! Obcaecati voluptatum sint culpa!</textarea>
+                                <textarea id="Content"  class="md-textarea form-control"></textarea>
                             </div>
                             <div class="row justify-content-end mt-3">
-                                <input type="submit" value="Save Changes" class="btn btn-agt btn-agt-default btn-agt-radius-normal p-2 mr-3">
+                                <input type="submit" value="Add Language" class="btn btn-agt btn-agt-default btn-agt-radius-normal p-2 mr-3">
                             </div>
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -231,12 +210,23 @@
 
     <!-- custom -->
     <script>
-        $(document).ready(function(){
-            const width = $('#Thumbnail_preview').innerWidth();
-            $('#Thumbnail_preview').height(width);
+        $('.datepicker').pickadate({
+            format: 'dd/mm/yyyy',
+            formatSubmit: 'dd/mm/yyyy',
+            hiddenPrefix: 'prefix__',
+            hiddenSuffix: '__suffix'
         });
 
-        $("#Thumbnail").change(function() {
+        $('select[name="Duration"]').change(function() {
+            if ($(this).val() == "TP") {
+                $('.duration-date').removeClass('d-none');
+            }
+            else {
+                $('.duration-date').addClass('d-none');
+            }
+        });
+        
+        $('#Thumbnail').change(function() {
             if (this.files && this.files[0]) {
                 const reader = new FileReader();
                 
@@ -244,6 +234,7 @@
                     $('#Thumbnail_preview').attr('src', e.target.result);
                     const width = $('#Thumbnail_preview').innerWidth();
                     $('#Thumbnail_preview').height(width);
+                    $('#Thumbnail_remove').removeClass('d-none');
                 }
                 
                 reader.readAsDataURL(this.files[0]);
@@ -254,8 +245,9 @@
             e.preventDefault();
             $('#Thumbnail_preview').attr('src', $('#Thumbnail_default')[0].src);
             $("#Thumbnail").val('');
+            $('#Thumbnail_remove').addClass('d-none');
         });
-        
+
         CKEDITOR.replace('Content', {
             height: 350
         });

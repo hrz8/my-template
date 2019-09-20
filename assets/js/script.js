@@ -1,5 +1,7 @@
 $(".button-collapse").sideNav();
 
+$('.mdb-select').material_select();
+
 $(document).ready(function () {
     $('.select2').each(function () {
         $(this).select2({
