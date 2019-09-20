@@ -157,8 +157,6 @@ table.display.dataTable tbody td {
 }
 
 .input-with-icon input[type="text"] {
-    /* background-color: #EAEAEA;
-    font-style: italic; */
     padding-left: 30px;
 }
 
@@ -172,6 +170,26 @@ table.display.dataTable tbody td {
 
 .input-with-icon {
     position: relative;
+}
+
+.input-with-icon-right span {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    padding: 1.5px 10px;
+    color: #495057;
+}
+
+.input-with-icon-right {
+    position: relative;
+}
+
+.datepicker {
+    height: 36px;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+    background-color: #fff !important;
 }
 
 .bg-grey {

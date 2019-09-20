@@ -1,7 +1,7 @@
 $(".button-collapse").sideNav();
 
 $(document).ready(function () {
-    $('select').each(function () {
+    $('.select2').each(function () {
         $(this).select2({
             theme: 'bootstrap4',
             width: 'style',

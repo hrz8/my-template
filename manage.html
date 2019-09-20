@@ -24,8 +24,9 @@
     <link rel="stylesheet" href="vendors/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css">
     <!--/. css this page -->
 
-    <!-- custom -->
+    <!-- core -->
     <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 
@@ -185,13 +186,13 @@
                                 </div>
                             </div>
                             <div class="col-md-2 p-md-1 mb-md-0 mb-2">
-                                <select name="category">
+                                <select name="category" class="select2">
                                     <option value="CL">Change Log</option>
                                     <option value="NT">Notice</option>
                                 </select>
                             </div>
                             <div class="col-md-3 p-md-1 mb-md-0 mb-2">
-                                <select name="tags[]" multiple="multiple" size="8" style="height: 100%;">
+                                <select name="tags[]" class="select2" multiple="multiple" size="8" style="height: 100%;">
                                     <option value="E1">Event 1</option>
                                     <option value="E2">Event 2</option>
                                     <option value="E3">Event 3</option>
@@ -269,8 +270,10 @@
     <script type="text/javascript" src="vendors/select2/dist/js/select2.min.js"></script>
     <!--/. js this page -->
 
-    <!-- custom -->
+    <!-- core -->
     <script src="assets/js/script.js"></script>
+    
+    <!-- custom -->
     <script type="text/javascript">
         $(document).ready(() => {
             agtDataTableAjax({
@@ -325,7 +328,7 @@
                         'render': function(data, type, full) {
                             const activeId = full.id;
                             return `
-                                <a href="manage.html" class="btn btn-agt btn-agt-light btn-agt-radius-normal p-1 mb-1"><span class="fas fa-cog"></span>&ensp;Setting</a>
+                                <a href="settings_news.html" class="btn btn-agt btn-agt-light btn-agt-radius-normal p-1 mb-1"><span class="fas fa-cog"></span>&ensp;Setting</a>
                                 <a href="#" class="btn btn-agt btn-agt-light btn-agt-radius-normal p-1 mb-1"><span class="fas fa-flag"></span>&ensp;Language</a>
                                 <a href="#" class="btn btn-agt btn-agt-red btn-agt-radius-normal p-1 mb-1"><span class="fas fa-trash"></span>&ensp;Delete</a>
                             `;
