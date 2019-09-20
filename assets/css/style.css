@@ -1,0 +1,227 @@
+/* elements */
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    background-image: url('/assets/images/background_tile.png');
+    background-repeat: repeat;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+/* end of element */
+
+/* replace mdb */
+.fixed-sn .double-nav, .fixed-sn footer, .fixed-sn main {
+    padding-left: 285px !important;
+}
+
+@media (max-width: 1440px) {
+    .fixed-sn .double-nav, .fixed-sn footer, .fixed-sn main {
+        padding-left: 0 !important;
+    }
+}
+
+.side-nav .logo-wrapper a {
+    width: 285px !important;
+}
+
+@media (max-height: 992px) {
+    .side-nav .logo-wrapper, .side-nav .logo-wrapper a {
+        height: 102.61px !important;
+    }
+}
+
+.side-nav .sidenav-bg {
+    width: 285px !important;
+}
+
+.md-form .form-control {
+    height: auto;
+}
+
+.md-form {
+    margin-top: 1.7rem;
+}
+
+.md-textarea + label:not(.active) {
+    top: 2.75rem;
+}
+/* end of replace mdb */
+
+/* replace dt */
+.paginate_button.active a {
+    background-color: #306D9C !important;
+}
+
+.dataTables_info {
+    font-size: .8rem;
+}
+
+table.display.dataTable tbody td {
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.dataTables_wrapper .row:first-of-type {
+    display: none;
+}
+/* end of replace dt */
+
+/* replace select2 */
+.select2-container .select2-selection {
+    height: 36px;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+}
+
+.select2-container .select2-selection.select2-selection--multiple {
+    overflow-y: scroll;
+}
+/* end of replcae select2 */
+
+/* sidebar */
+.side-nav {
+    width: 285px !important;
+}
+
+.white-skin .side-nav.bg-admin-sidebar {
+    background-image: url('/assets/images/sidebar.png') !important;
+}
+
+.white-skin .side-nav .sidenav-bg.mask-strong:after, .white-skin .side-nav .sidenav-bg:after {
+    background: rgba(255, 255, 255, .5);
+}
+
+.white-skin .side-nav .collapsible li .collapsible-header {
+    color: rgba(0, 0, 0, .55);
+}
+
+.white-skin .side-nav .collapsible li .collapsible-header.active,
+.white-skin .side-nav .collapsible li .collapsible-body a.active {
+    color: #306D9C;
+}
+
+.white-skin .side-nav .collapsible > li > a {
+    pointer-events: none;
+    cursor: default;
+    font-size: .75rem;
+}
+
+.white-skin .side-nav .collapsible-body > ul > li > a {
+    background-color: transparent !important;
+    font-size: .9rem;
+}
+
+.navbar .breadcrumb-item + .breadcrumb-item::before {
+    color: #bdbdbd;
+}
+
+.navbar .breadcrumb-item:first-of-type > a {
+    font-size: 1.2rem !important;
+    color: #306D9C;
+    font-weight: 400;
+}
+
+
+.side-nav a:hover {
+    color: #306D9C !important;
+}
+/* ./ sidebar */
+
+/* reset */
+.reset-border {
+    border: none !important;
+}
+
+/* components */
+.font-small {
+    font-size: .8rem !important;
+}
+
+.input-with-icon input[type="text"] {
+    /* background-color: #EAEAEA;
+    font-style: italic; */
+    padding-left: 30px;
+}
+
+.input-with-icon span {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 3px 10px;
+    color: #495057;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.bg-grey {
+    background-color: #EAEAEA !important;
+}
+
+.bg-agt-gradient {
+    background: linear-gradient(176.04deg, #3D3973 0%, #3592BB 100%);
+}
+
+.bg-agt-default {
+    background-color: #306D9C !important;
+}
+
+.bg-agt-dark {
+    background-color: #426682 !important;
+}
+
+.color-agt-default {
+    color: #306D9C !important;
+}
+
+a.dropdown-item:hover {
+    background-color: #306D9C !important;
+}
+
+.btn-agt {
+    text-transform: none !important;
+    
+}
+
+.btn-agt-radius-normal {
+    border-radius: .33rem;
+}
+
+.btn-agt-radius-extra {
+    border-radius: 2rem;
+}
+
+.btn-agt-light {
+    background-color: #1F92BE !important;
+    color: #fff !important;
+}
+
+.btn-agt-default {
+    background-color: #306D9C !important;
+    color: #fff !important;
+}
+
+.btn-agt-red {
+    background-color: #9C304E !important;
+    color: #fff !important;
+}
