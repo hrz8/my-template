@@ -243,3 +243,8 @@ a.dropdown-item:hover {
     background-color: #9C304E !important;
     color: #fff !important;
 }
+
+.btn-agt-white {
+    background-color: #fff !important;
+    color: #426682 !important;
+}

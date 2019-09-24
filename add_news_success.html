@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Add News</title>
+
+    <!-- favicon -->
+    <link rel="title icon" type="image/png" href="assets/images/agate_icon.png">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="vendors/fontawesome-free/css/all.min.css">
+    <!-- bootstrap core css -->
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- mdb css -->
+    <link href="vendors/mdbootstrap-pro/css/mdb.min.css" rel="stylesheet">
+
+    <!-- css this page -->
+    <!--/. css this page -->
+
+    <!-- core -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+
+<body class="fixed-sn white-skin">
+
+    <header>
+        <!-- sidebar -->
+        <div id="slide-out" class="side-nav bg-admin-sidebar fixed">
+            <ul class="custom-scrollbar">
+
+                <!-- logo -->
+                <li>
+                    <div class="logo-wrapper reset-border waves-light">
+                        <a href="#"><img src="assets/images/agate_logo.png" class="img-fluid flex-center"></a>
+                    </div>
+                </li>
+                <!--/.  logo -->
+
+                <!-- sidebar links -->
+                <li>
+                    <ul class="collapsible">
+                        <li>
+                            <!-- <a class="collapsible-header waves-effect arrow-r">News Component</a> -->
+                            <div class="collapsible-body d-block">
+                                <ul>
+                                    <li>
+                                        <a href="manage.html" class="waves-effect pl-4"><span class="fas fa-long-arrow-alt-left" aria-hidden="true"></span>&emsp;Back</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="collapsible-body d-block">
+                                <ul>
+                                    <li>
+                                        <a href="add_news.html" class="waves-effect pl-4 active"><span class="fas fa-file-medical" aria-hidden="true"></span>&emsp;Add News</a>                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!--/. sidebar links -->
+            </ul>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <!--/. sidebar -->
+
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"
+            aria-label="breadcrumb">
+
+            <!-- sidenav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse black-text">
+                    <span class="fas fa-bars"></span></a>
+            </div>
+            <!--/. sidenav slide-out button -->
+
+            <!-- breadcrumb-->
+            <div class="pl-lg-3">
+                <ol class="breadcrumb clearfix d-none align-items-center d-md-inline-flex pt-0">
+                    <li class="breadcrumb-item black-text">
+                        <a href="games.html"><span class="fas fa-gamepad" aria-hidden="true"></span>&nbsp;Games</a>
+                    </li>
+                    <li class="breadcrumb-item black-text"><a href="game_description.html">Kota Kita</a></li>
+                    <li class="breadcrumb-item black-text active"><a href="manage.html">News</a></li>
+                    <li class="breadcrumb-item black-text active">Add News</li>
+                </ol>
+            </div>
+            <!--/. breadcrumb-->
+
+            <!-- account user dropdown -->
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="far fa-user" aria-hidden="true"></span>&nbsp;sa@seeddata.com
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+            <!--/. account user dropdown -->
+
+        </nav>
+        <!--/. navbar -->
+    </header>
+
+    <main>
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="card col-lg-5 col-md-8 px-0">
+                    <div class="card-header text-center h5 bg-agt-dark text-white">Success Add News</div>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <p class="font-weight-bold">News has been created successfully</p>
+                            <img src="assets/images/news_success.png" class="img-fluid mb-3" alt="news created logo">
+                            <p class="font-weight-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p class="font-weight-normal">Notice</p>
+                            <p class="font-weight-normal">Permanent</p>
+                            <p class="font-weight-normal">Actived - Pinned</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="add_news.html" class="btn btn-agt btn-agt-white btn-agt-radius-normal p-2">Create another</a>
+                            <a href="manage.html" class="btn btn-agt btn-agt-default btn-agt-radius-normal ml-auto p-2">Finish</a>
+                        </div>
+                        <div class="text-center mt-3 text-muted">
+                            <small>It will auto redirect to manage this news in <span id="remaining-second">5</span> seconds or click <a href="language_news.html" style="text-decoration: underline;">here</a>.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page-footer text-center text-md-left bg-agt-gradient">
+        <!-- copyright -->
+        <div class="footer-copyright py-3 text-center">
+            <div class="container-fluid">
+                © 2019 Copyright <a href="https://agate.id">&nbsp;PT. Agate International</a>
+            </div>
+        </div>
+        <!--/. copyright -->
+
+    </footer>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="vendors/jquery/jquery-3.4.1.min.js"></script>
+    <!-- popper (bootstrap tooltips) -->
+    <script type="text/javascript" src="vendors/mdbootstrap-pro/js/popper.min.js"></script>
+    <!-- bootstrap core js -->
+    <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- mdb js -->
+    <script type="text/javascript" src="vendors/mdbootstrap-pro/js/mdb.min.js"></script>
+
+    <!-- js this page -->
+    <!--/. js this page -->
+
+    <!-- core -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- custom -->
+    <script>
+        let count = 6;
+        function countdown() {
+            var timer = document.getElementById("timer");
+            if (count > 0) {
+                count--;
+                $('#remaining-second').html(count);
+                setTimeout("countdown()", 1000);
+            }
+            else {
+                window.location.href = 'language_news.html';
+            }
+        }
+        countdown();
+    </script>
+</body>
+
+</html>
