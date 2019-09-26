@@ -36,3 +36,9 @@ const agtDataTableAjax = config => {
         },
     });
 }
+
+$(window).resize(_ => {
+    if ($('#sidenav-overlay').length) {
+        $('#sidenav-overlay').remove();
+    }
+})

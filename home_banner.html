@@ -20,8 +20,6 @@
     <!-- css this page -->
     <link rel="stylesheet" type="text/css" href="vendors/mdbootstrap-free/css/addons/datatables.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/datatables/Responsive-2.2.2/css/responsive.bootstrap4.min.css"/>
-    <link rel="stylesheet" type="text/css" href="vendors/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" href="vendors/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css">
     <!--/. css this page -->
 
     <!-- core -->
@@ -63,10 +61,10 @@
                             <div class="collapsible-body d-block">
                                 <ul>
                                     <li>
-                                        <a href="manage.html" class="waves-effect pl-4 active"><span class="far fa-newspaper" aria-hidden="true"></span>&emsp;News</a>
+                                        <a href="manage.html" class="waves-effect pl-4"><span class="far fa-newspaper" aria-hidden="true"></span>&emsp;News</a>
                                     </li>
                                     <li>
-                                        <a href="home_banner.html" class="waves-effect pl-4"><span class="fas fa-home" aria-hidden="true"></span>&emsp;Home Banner</a>
+                                        <a href="home_banner.html" class="waves-effect pl-4 active"><span class="fas fa-home" aria-hidden="true"></span>&emsp;Home Banner</a>
                                     </li>
                                 </ul>
                             </div>
@@ -174,55 +172,67 @@
 
         <div class="container-fluid">
             <div class="row justify-content-center">
+                <div class="card col pr-0 pl-0 mb-3">
+                    <div class="card-header text-center h5 bg-agt-dark text-white">Default Preset List</div>
+                    <div class="card-body">
+                        <table class="table display non-dt" width="100%">
+                            <thead>
+                                <tr class="grey-text">
+                                    <th>
+                                        Preset Name
+                                    </th>
+                                    <th>
+                                        Status
+                                    </th>
+                                    <th>
+                                        Action
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Default for Kota Kita
+                                    </td>
+                                    <td class="grey-text">
+                                        Inactive
+                                    </td>
+                                    <td>
+                                        <a href="edit_preset.html" class="btn btn-agt btn-agt-light btn-agt-radius-normal p-1 mb-1"><span class="fas fa-edit"></span> Edit</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
                 <div class="card col pr-0 pl-0">
-                    <div class="card-header text-center h5 bg-agt-dark text-white">News List</div>
+                    <div class="card-header text-center h5 bg-agt-dark text-white">Schedule Preset List</div>
                     <div class="card-body">
                         <div class="row align-items-center">
-                            <div class="col-md-2 pr-md-1 mb-md-0 mb-2">
+                            <div class="col-md-3 pr-md-1 mb-md-0 mb-2">
                                 <label class="sr-only" for="search-dt">Search</label>
                                 <div class="input-with-icon">
                                     <input type="text" class="form-control font-italic bg-grey" id="search-dt" placeholder="Seacrh news...">
                                     <span class="fas fa-search" aria-hidden="true"></span>
                                 </div>
                             </div>
-                            <div class="col-md-2 p-md-1 mb-md-0 mb-2">
-                                <select name="category" class="select2">
-                                    <option value="CL">Change Log</option>
-                                    <option value="NT">Notice</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 p-md-1 mb-md-0 mb-2">
-                                <select name="tags[]" class="select2" multiple="multiple" size="8" style="height: 100%;">
-                                    <option value="E1">Event 1</option>
-                                    <option value="E2">Event 2</option>
-                                    <option value="E3">Event 3</option>
-                                    <option value="NY">New Year</option>
-                                </select>
-                            </div>
                             <div class="col-md-2 p-md-1 text-center text-md-left">
                                 <button type="submit" class="btn btn-agt btn-agt-default btn-agt-radius-normal ml-0 py-2 px-5 px-md-2"><span class="fas fa-search" aria-hidden="true"></span>&ensp;Search</button>
                             </div>
                             <div class="col-md-3 ml-md-auto text-center text-md-right">
-                                <a href="add_news.html" class="btn btn-agt btn-agt-default btn-agt-radius-extra ml-0 py-2 px-5 px-md-2"><span class="fas fa-plus" aria-hidden="true"></span>&ensp;Add News</a>
+                                <a href="add_news.html" class="btn btn-agt btn-agt-default btn-agt-radius-extra ml-0 py-2 px-5 px-md-2"><span class="fas fa-plus" aria-hidden="true"></span>&ensp;Add Preset</a>
                             </div>
                         </div>
-                        <table id="dt-news" class="table display" width="100%">
+                        <table id="dt-preset" class="table display" width="100%">
                             <thead>
                                 <tr>
                                     <th class="th-sm">
-                                        Title
-                                    </th>
-                                    <th class="th-sm">
-                                        Category
-                                    </th>
-                                    <th class="th-sm">
-                                        Tags
+                                        Preset Name
                                     </th>
                                     <th class="th-sm">
                                         Status
-                                    </th>
-                                    <th class="th-sm">
-                                        Pinned ?
                                     </th>
                                     <th class="th-sm">
                                         Start Date
@@ -267,7 +277,6 @@
     <script type="text/javascript" src="vendors/mdbootstrap-free/js/addons/datatables.min.js"></script>
     <script type="text/javascript" src="vendors/datatables/Responsive-2.2.2/js/dataTables.responsive.min.js"></script>
     <script type="text/javascript" src="vendors/datatables/Responsive-2.2.2/js/responsive.bootstrap4.min.js"></script>
-    <script type="text/javascript" src="vendors/select2/dist/js/select2.min.js"></script>
     <!--/. js this page -->
 
     <!-- core -->
@@ -277,16 +286,15 @@
     <script type="text/javascript">
         $(document).ready(() => {
             agtDataTableAjax({
-                'element': '#dt-news',
+                'element': '#dt-preset',
                 'ajax': {
-                    'url': 'https://my-json-server.typicode.com/hrz4app/fakejson/news',
+                    'url': 'https://my-json-server.typicode.com/hrz4app/fakejson/presets',
                     'dataFilter': function(str) {
                         const json = JSON.parse(str);
                         let array_of_obj = [];
                         json.forEach((item, index) => {
                             array_of_obj.push([
-                                item.id, item.title, item.category,
-                                item.tags, item.status, item.pinned,
+                                item.id, item.name, item.status,
                                 item.startDate, item.endDate
                             ])
                         })
@@ -304,32 +312,22 @@
                             return full[1].substring(0, 28) + ((full[1].length > 28) ? '...' : '');
                         }
                     },
-                    { 'data': 2 },
+                    {
+                        'data': 2,
+                        'type': 'number',
+                        'render': (data, type, full) => {
+                            return (full[2] == 0) ? `<span class="grey-text">Inactive</span>` : `Active`;
+                        }
+                    },
                     { 'data': 3 },
-                    {
-                        'data': 4,
-                        'type': 'number',
-                        'render': (data, type, full) => {
-                            return (full[4] == 0) ? `<span class="grey-text">Inactive</span>` : `Active`;
-                        }
-                    },
-                    {
-                        'data': 5,
-                        'type': 'number',
-                        'render': (data, type, full) => {
-                            return (full[5] == 0) ? 'No' : 'Yes';
-                        }
-                    },
-                    { 'data': 6 },
-                    { 'data': 7 },
+                    { 'data': 4 },
                     { 
                         'data': 0,
                         'type': 'string',
                         'render': function(data, type, full) {
                             const activeId = full.id;
                             return `
-                                <a href="settings_news.html" class="btn btn-agt btn-agt-light btn-agt-radius-normal p-1 mb-1"><span class="fas fa-cog"></span>&ensp;Setting</a>
-                                <a href="language_news.html" class="btn btn-agt btn-agt-light btn-agt-radius-normal p-1 mb-1"><span class="fas fa-flag"></span>&ensp;Language</a>
+                                <a href="edit_preset.html" class="btn btn-agt btn-agt-light btn-agt-radius-normal p-1 mb-1"><span class="fas fa-edit"></span>&ensp;Edit</a>
                                 <a href="#" class="btn btn-agt btn-agt-red btn-agt-radius-normal p-1 mb-1"><span class="fas fa-trash"></span>&ensp;Delete</a>
                             `;
                         }
@@ -339,11 +337,11 @@
         });
 
         $('#search-dt').keyup(() => {
-            $('#dt-news').DataTable().search($('#search-dt').val()).draw();
+            $('#dt-preset').DataTable().search($('#search-dt').val()).draw();
         });
 
         $('#btn-search-dt').click(() => {
-            $('#dt-news').DataTable().search($('#search-dt').val()).draw();
+            $('#dt-preset').DataTable().search($('#search-dt').val()).draw();
         })
     </script>
 </body>

@@ -152,12 +152,20 @@ table.display.dataTable tbody td {
 }
 
 /* components */
+table.non-dt td {
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
 .font-small {
     font-size: .8rem !important;
 }
 
-.input-with-icon input[type="text"] {
+.input-with-icon input {
     padding-left: 30px;
+    border: 1px solid #eaeaea;
 }
 
 .input-with-icon span {
@@ -193,7 +201,7 @@ table.display.dataTable tbody td {
 }
 
 .bg-grey {
-    background-color: #EAEAEA !important;
+    background-color: #eaeaea !important;
 }
 
 .bg-agt-gradient {
