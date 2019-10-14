@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Add Preset</title>
+
+    <!-- favicon -->
+    <link rel="title icon" type="image/png" href="assets/images/agate_icon.png">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="vendors/fontawesome-free/css/all.min.css">
+    <!-- bootstrap core css -->
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- mdb css -->
+    <link href="vendors/mdbootstrap-pro/css/mdb.min.css" rel="stylesheet">
+
+    <!-- css this page -->
+    <link rel="stylesheet" href="vendors/bs-stepper/bs-stepper.css">
+    <link rel="stylesheet" type="text/css" href="vendors/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="vendors/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css">
+    <!--/. css this page -->
+
+    <!-- core -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+
+<body class="fixed-sn white-skin">
+
+    <header>
+        <!-- sidebar -->
+        <div id="slide-out" class="side-nav bg-admin-sidebar fixed">
+            <ul class="custom-scrollbar">
+
+                <!-- logo -->
+                <li>
+                    <div class="logo-wrapper reset-border waves-light">
+                        <a href="#"><img src="assets/images/agate_logo.png" class="img-fluid flex-center"></a>
+                    </div>
+                </li>
+                <!--/.  logo -->
+
+                <!-- sidebar links -->
+                <li>
+                    <ul class="collapsible">
+                        <li>
+                            <!-- <a class="collapsible-header waves-effect arrow-r">News Component</a> -->
+                            <div class="collapsible-body d-block">
+                                <ul>
+                                    <li>
+                                        <a href="home_banner.html" class="waves-effect pl-4"><span class="fas fa-long-arrow-alt-left" aria-hidden="true"></span>&emsp;Back</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="collapsible-body d-block">
+                                <ul>
+                                    <li>
+                                        <a href="add_preset.html" class="waves-effect pl-4 active"><span class="fas fa-file-medical" aria-hidden="true"></span>&emsp;Add Preset</a>                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!--/. sidebar links -->
+            </ul>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <!--/. sidebar -->
+
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"
+            aria-label="breadcrumb">
+
+            <!-- sidenav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse black-text">
+                    <span class="fas fa-bars"></span></a>
+            </div>
+            <!--/. sidenav slide-out button -->
+
+            <!-- breadcrumb-->
+            <div class="pl-lg-3">
+                <ol class="breadcrumb clearfix d-none align-items-center d-md-inline-flex pt-0">
+                    <li class="breadcrumb-item black-text">
+                        <a href="games.html"><span class="fas fa-gamepad" aria-hidden="true"></span>&nbsp;Games</a>
+                    </li>
+                    <li class="breadcrumb-item black-text"><a href="game_description.html">Kota Kita</a></li>
+                    <li class="breadcrumb-item black-text active"><a href="home_banner.html">Home Banner</a></li>
+                    <li class="breadcrumb-item black-text active">Add Preset</li>
+                </ol>
+            </div>
+            <!--/. breadcrumb-->
+
+            <!-- account user dropdown -->
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="far fa-user" aria-hidden="true"></span>&nbsp;sa@seeddata.com
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+            <!--/. account user dropdown -->
+
+        </nav>
+        <!--/. navbar -->
+    </header>
+
+    <main>
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="card col-sm-8 pr-0 pl-0 mb-3">
+                    <div class="card-header text-center h5 bg-agt-dark text-white">Add Preset</div>
+                    <div class="card-body px-5 pt-5">
+                        <div id="stepperForm" class="bs-stepper linear">
+                            <div class="bs-stepper-header" role="tablist">
+                                <div id="step-title-1" class="step active" data-target="#step-1">
+                                    <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger1" aria-controls="step-1" aria-selected="true">
+                                        <span class="bs-stepper-circle">1. Information & Template</span>
+                                    </button>
+                                </div>
+                                <div id="step-line-1" class="bs-stepper-line"></div>
+                                <div id="step-title-2" class="step" data-target="#step-2">
+                                    <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger2" aria-controls="step-2" aria-selected="false" disabled="disabled">
+                                        <span class="bs-stepper-circle">2. News Selection</span>
+                                    </button>
+                                </div>
+                                <div id="step-line-2" class="bs-stepper-line"></div>
+                                <div id="step-title-3" class="step" data-target="#step-3">
+                                    <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger3" aria-controls="step-3" aria-selected="false" disabled="disabled">
+                                        <span class="bs-stepper-circle">3. Preset Review</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bs-stepper-content">
+                                <form action="">
+                                    <div id="step-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepperFormTrigger1">
+                                        <div class="row">
+                                            <div class="col-lg-7">
+                                                <div class="md-form">
+                                                    <input type="text" id="Name" name="Name" class="form-control">
+                                                    <label for="Name">Preset Name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-lg-7">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label class="text-muted mb-1 font-small">Start Date</label>
+                                                        <div class="input-with-icon-right">
+                                                            <input type="text" id="StartDate"  name="StartDate" class="form-control datepicker" value="yyyy-mm-dd">                                    
+                                                            <span class="fas fa-calendar color-agt-default" aria-hidden="true"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="text-muted mb-1 font-small">End Date</label>
+                                                        <div class="input-with-icon-right">
+                                                            <input type="text" id="EndDate" name="EndDate" class="form-control datepicker" value="yyyy-mm-dd">                                    
+                                                            <span class="fas fa-calendar color-agt-default" aria-hidden="true"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <label class="font-medium">Choose Template:</label>
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-4 align-items-center d-flex flex-column">
+                                                    <div class="bezel-fixed-potrait">
+                                                        <div class="screen-potrait">
+                                                            <div class="bg-agt-light h-100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <input id="TemplateType1" type="radio" value="1" name="TemplateType" checked>
+                                                    <label for="TemplateType1" class="mt-3 font-medium">Full View (One Big)</label>
+                                                </div>
+                                                <div class="col-md-4 align-items-center d-flex flex-column">
+                                                    <div class="bezel-fixed-potrait">
+                                                        <div class="screen-potrait">
+                                                            <div class="h-50">
+                                                                <div class="bg-agt-light h-100"></div>
+                                                            </div>
+                                                            <div class="h-50">
+                                                                <div class="bg-agt-dark h-33 border-bottom-white"></div>
+                                                                <div class="bg-agt-dark h-33 border-bottom-white"></div>
+                                                                <div class="bg-agt-dark h-33"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <input id="TemplateType2" type="radio" value="2" name="TemplateType">
+                                                    <label for="TemplateType2" class="mt-3 font-medium">Split View 1 (One Big, Other Small)</label>
+                                                </div>
+                                                <div class="col-md-4 align-items-center d-flex flex-column">
+                                                    <div class="bezel-fixed-potrait">
+                                                        <div class="screen-potrait">
+                                                            <div class="h-100">
+                                                                <div class="bg-agt-light h-16 border-bottom-white"></div>
+                                                                <div class="bg-agt-light h-16 border-bottom-white"></div>
+                                                                <div class="bg-agt-light h-16 border-bottom-white"></div>
+                                                                <div class="bg-agt-light h-16 border-bottom-white"></div>
+                                                                <div class="bg-agt-light h-16 border-bottom-white"></div>
+                                                                <div class="bg-agt-light h-16"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <input id="TemplateType3" type="radio" value="3" name="TemplateType">
+                                                    <label for="TemplateType3" class="mt-3 font-medium">Split View 2 (All Small)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <button type="button" id="next-to-step-2" class="btn btn-agt btn-agt-default btn-agt-radius-normal p-2 mr-3 ml-auto">Next Step</button>
+                                        </div>
+                                    </div>
+                                    <div id="step-2" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger2">
+                                        <div class="row px-0 px-lg-3 py-0 py-lg-3">
+                                            <div class="col-lg-6">
+                                                <div class="text-center mb-2">
+                                                    <span>Potrait</span>
+                                                </div>
+                                                <div class="scrollable-screen-potrait p-1">
+                                                    <div class="h-100 bg-agt-light"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-1">
+                                                <span class="mt-4 circle">1</span>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <div class="mt-4">
+                                                    <label class="text-muted mb-1 font-small" for="AllNews">News</label>
+                                                    <select name="AllNews" class="select2">
+                                                        <option value="1">Now Netflix Is All-Thumbs</option>
+                                                        <option value="2">Pamela Edstrom, Who Helped Shape Microsoft's Public Image, Dies at 71</option>
+                                                        <option value="3">Farhad and Mike’s Week in Tech: Another Huge Security Flaw</option>
+                                                        <option value="4">Video Games Aren't Addictive</option>
+                                                        <option value="5">Jerks and the Start-Ups They Ruin</option>
+                                                    </select>
+                                                    <select name="SelectedNews[]" class="d-none" multiple="multiple">
+                                                        <option value="1">Now Netflix Is All-Thumbs</option>
+                                                        <option value="2">Pamela Edstrom, Who Helped Shape Microsoft's Public Image, Dies at 71</option>
+                                                        <option value="3">Farhad and Mike’s Week in Tech: Another Huge Security Flaw</option>
+                                                        <option value="4">Video Games Aren't Addictive</option>
+                                                        <option value="5">Jerks and the Start-Ups They Ruin</option>
+                                                    </select>
+                                                    <label class="text-muted mb-1 mt-2 font-small d-block">Banner</label>
+                                                    <div class="d-flex">
+                                                        <button type="button" class="file-field btn btn-agt btn-agt-light btn-agt-radius-normal p-2 font-small ml-0 mt-0">
+                                                            <span>Upload Image</span>
+                                                            <input type="file" accept="image/*" id="Banner" name="Banner" class="">
+                                                        </button>
+                                                        <button type="button" class="btn btn-agt btn-agt-white btn-agt-radius-normal py-2 px-3 mt-0 ml-auto disabled">Back</button>
+                                                        <button type="button" class="btn btn-agt btn-agt-default btn-agt-radius-normal py-2 px-3 mt-0 mr-0 disabled">Next</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <button type="button" id="prev-to-step-1" class="btn btn-agt btn-agt-white btn-agt-radius-normal p-2 ml-3">Back</button>
+                                            <button type="button" id="next-to-step-3" class="btn btn-agt btn-agt-default btn-agt-radius-normal p-2 mr-3 ml-auto">Next Step</button>
+                                        </div>
+                                    </div>
+                                    <div id="step-3" role="tabpanel" class="bs-stepper-pane fade text-center dstepper-none" aria-labelledby="stepperFormTrigger3">
+                                        <div class="row mt-3">
+                                            <button type="button" id="prev-to-step-2" class="btn btn-agt btn-agt-white btn-agt-radius-normal p-2 ml-3">Back</button>
+                                            <button type="submit" class="btn btn-agt btn-agt-default btn-agt-radius-normal p-2 mr-3 ml-auto">Create</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page-footer text-center text-md-left bg-agt-gradient">
+        <!-- copyright -->
+        <div class="footer-copyright py-3 text-center">
+            <div class="container-fluid">
+                © 2019 Copyright <a href="https://agate.id">&nbsp;PT. Agate International</a>
+            </div>
+        </div>
+        <!--/. copyright -->
+
+    </footer>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="vendors/jquery/jquery-3.4.1.min.js"></script>
+    <!-- popper (bootstrap tooltips) -->
+    <script type="text/javascript" src="vendors/mdbootstrap-pro/js/popper.min.js"></script>
+    <!-- bootstrap core js -->
+    <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- mdb js -->
+    <script type="text/javascript" src="vendors/mdbootstrap-pro/js/mdb.min.js"></script>
+
+    <!-- js this page -->
+    <script type="text/javascript" src="vendors/bs-stepper/bs-stepper.min.js"></script>
+    <script type="text/javascript" src="vendors/select2/dist/js/select2.min.js"></script>
+    <!--/. js this page -->
+
+    <!-- core -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- custom -->
+    <script>
+        const stepper = new Stepper($('.bs-stepper')[0]);
+        const nextToStep2 = function() {
+            if ($(this).val() != "" && $('#StartDate').val() != 'yyyy-mm-dd' && $('#EndDate').val() != 'yyyy-mm-dd') {
+                $('#next-to-step-2').removeClass('disabled');
+            }
+            else {
+                $('#next-to-step-2').addClass('disabled');
+            }
+        }
+
+        const templateType1 = `
+                <div class="bg-agt-light h-100"></div>`;
+        const templateType2 = `
+            <div class="scrollable-content-potrait">
+                <div class="h-100">
+                    <div class="bg-agt-light h-25 border-bottom-white"></div>
+                    <div class="bg-agt-light h-8 border-bottom-white"></div>
+                    <div class="bg-agt-light h-8 border-bottom-white"></div>
+                    <div class="bg-agt-light h-8 border-bottom-white"></div>
+                    <div class="bg-agt-light h-8 border-bottom-white"></div>
+                    <div class="bg-agt-light h-8 border-bottom-white"></div>
+                    <div class="bg-agt-light h-8 border-bottom-white"></div>
+                    <div class="bg-agt-light h-8 border-bottom-white"></div>
+                    <div class="bg-agt-light h-8 border-bottom-white"></div>
+                    <div class="bg-agt-light h-8"></div>
+                </div>
+            </div>`;
+        const templateType3 = `
+            <div class="scrollable-content-potrait">
+                <div class="h-100">
+                    <div class="bg-agt-light h-10 border-bottom-white"></div>
+                    <div class="bg-agt-light h-10 border-bottom-white"></div>
+                    <div class="bg-agt-light h-10 border-bottom-white"></div>
+                    <div class="bg-agt-light h-10 border-bottom-white"></div>
+                    <div class="bg-agt-light h-10 border-bottom-white"></div>
+                    <div class="bg-agt-light h-10 border-bottom-white"></div>
+                    <div class="bg-agt-light h-10 border-bottom-white"></div>
+                    <div class="bg-agt-light h-10 border-bottom-white"></div>
+                    <div class="bg-agt-light h-10 border-bottom-white"></div>
+                    <div class="bg-agt-light h-10"></div>
+                </div>
+            </div>`;
+
+        $('#Name').keyup(nextToStep2);
+        $('#StartDate, #EndDate').change(nextToStep2);
+        $('input[name="TemplateType"]').change(function() {
+            if ($(this).val() === '1') {
+                $('.scrollable-screen-potrait').addClass('p-1');
+                $('.scrollable-screen-potrait').html(templateType1);
+            }
+            if ($(this).val() === '2') {
+                $('.scrollable-screen-potrait').removeClass('p-1');
+                $('.scrollable-screen-potrait').html(templateType2);
+            }
+            if ($(this).val() === '3') {
+                $('.scrollable-screen-potrait').removeClass('p-1');
+                $('.scrollable-screen-potrait').html(templateType3);
+            }
+        })
+
+        $('#next-to-step-2').click(function(e) {
+            stepper.to(2);
+            $('#step-title-1 button').removeAttr('disabled');
+            $('#step-title-1 button span').css({'background-color': '#1F92BE'});
+            $('#step-line-1').css({'background-color': '#1F92BE', 'opacity': 1});
+            $('#step-title-2 button span').css({'background-color': '#1F92BE'});
+        });
+
+        $('#next-to-step-3').click(function(e) {
+            stepper.next(3);
+            $('#step-title-1 button').removeAttr('disabled');
+            $('#step-title-1 button span').css({'background-color': '#1F92BE'});
+            $('#step-line-1').css({'background-color': '#1F92BE', 'opacity': 1});
+            $('#step-title-2 button').removeAttr('disabled');
+            $('#step-title-2 button span').css({'background-color': '#1F92BE'});
+            $('#step-line-2').css({'background-color': '#1F92BE', 'opacity': 1});
+        });
+
+        $('#prev-to-step-1').click(function(e) {
+            stepper.to(1);
+            $('#step-title-2 button span').css({'background-color': '#6c757d'});
+            $('#step-line-1').css({'background-color': '#6c757d', 'opacity': .65});
+        });
+
+        $('#prev-to-step-2').click(function(e) {
+            stepper.to(2);
+            $('#step-title-1 button').removeAttr('disabled');
+            $('#step-title-2 button span').css({'background-color': '#1F92BE'});
+            $('#step-line-2').css({'background-color': '#6c757d', 'opacity': .65});
+        });
+
+        $('.datepicker').pickadate({
+            format: 'yyyy-mm-dd'
+        });
+    </script>
+</body>
+
+</html>
